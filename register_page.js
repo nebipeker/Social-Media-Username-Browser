@@ -1,3 +1,12 @@
+function saveInfo() {
+    var username = document.getElementById("username");
+    var email = document.getElementById("email");
+
+    window.localStorage.setItem("username", username.value);
+    window.localStorage.setItem("email", email.value);
+
+}
+
 function validatePassword() {
     var password = document.getElementById("password").value;
     var repeated_password = document.getElementById("repeated_password").value;
