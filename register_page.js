@@ -6,7 +6,6 @@ function saveInfo() {
     window.localStorage.setItem("email", email.value);
 
 }
-
 function validatePassword() {
     var password = document.getElementById("password").value;
     var repeated_password = document.getElementById("repeated_password").value;
