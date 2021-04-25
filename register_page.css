@@ -40,3 +40,29 @@
     background-position: center;
    
 }
+#username {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+}
+
+#password {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+}
+
+#email {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+}
