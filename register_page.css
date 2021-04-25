@@ -66,3 +66,42 @@
     border-radius: 12px;
     background-color: rgb(255, 255, 255);
 }
+
+#repeated_password {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+}
+
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    border-radius: 25px;
+    color: rgb(249, 250, 253);
+}
+
+
+.register {
+    background-color: #2c4db8;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding: 14px 40px;
+    margin: 8px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    float: right;
+    width: 50%;
+}
+
+@keyframes slide {
+    
+    0% {
+        transform: translateX(-25%);
+    }
+    100% {
+        transform: translateX(25%);
+    }
+}
