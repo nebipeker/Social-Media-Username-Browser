@@ -9,7 +9,22 @@
 </head>
 <body>
     
-    
+    <form>
+        <label for="username">Username</label>
+        <input type="text" id="username"  placeholder="Username">
+    <br>
+        
+        <label for="platform">Platform</label>
+        <select id="platform" >
+          <option value="twitter">Twitter</option>
+          <option value="facebook">Facebook</option>
+          <option value="instagram">Instagram</option>
+        </select>
+    <br>
+        <label for="cmessage">Message</label>
+        <textarea id="cmessage"  placeholder="Write your comment" style="height:150px"></textarea> <br>
+        <button type="submit" onclick="return validatePassword()">Submit</button>
+    </form>
     
 </body>
 </html>

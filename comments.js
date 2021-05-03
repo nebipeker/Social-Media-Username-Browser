@@ -3,18 +3,18 @@
 // local stogaredakileri arayan ve commentleri cikaran
 // struct generate eden ve document write atan DONE
 // eski yorumlari silen
-document.writeln('<button onclick="addToLocal()">Add To localstorage</button>')
-document.write('<button onclick="print()">print localstorage</button>')
+//document.writeln('<button onclick="addToLocal()">Add To localstorage</button>')
+//document.write('<button onclick="print()">print localstorage</button>')
 var comments = [{"account":"nebipeker","network":"instagram","message":"Great codes","commenter":"@egemeniscan"}];
 localStorage.setItem("comments", JSON.stringify(comments));
 var storage_comments = JSON.parse(localStorage.getItem("comments"));
 
 
-document.write("<p>"+storage_comments[0].account+"</p>")
+//document.write("<p>"+storage_comments[0].account+"</p>")
 
 //createComment("Betul","Super","Twitter")
-createComment("Betul","Super","Twitter")
-deleteOld()
+//createComment("Betul","Super","Twitter")
+//deleteOld()
 function createComment(commentOwner,commentMessage,commentNetwork){
     document.write('\
     <div class="comment">\
@@ -54,3 +54,4 @@ function print(){
         console.log(localStorage);
     }
 }
+
