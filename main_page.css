@@ -1,3 +1,103 @@
+#twitter{
+    padding-top: 40px;
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: block;
+   
+}
+#twitter img {
+    display:block;
+    height: 70px;
+    width: 70px;
+}
+#twitter .img-2 {
+    display: none;
+    position: absolute;
+    margin: 0;
+    padding-top: 20px;
+    height: 70px;
+    width: 70px;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 99;
+}
+#twitter:hover .img-2 {
+    display: block;
+}
+#instagram{
+    padding-top: 40px;
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#instagram img {
+    display: block;
+    height: 70px;
+    width: 70px;
+}
+#instagram .img-2 {
+    display: none;
+    position: absolute;
+    margin: 0;
+    padding-top: 20px;
+    height: 70px;
+    width: 70px;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 99;
+}
+#instagram:hover .img-2 {
+    display: block;
+}
+#youtube{
+    padding-top: 40px;
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#youtube img {
+    display: block;
+    height: 70px;
+    width: 70px;
+}
+#youtube .img-2 {
+    display: none;
+    position: absolute;
+    margin: 0;
+    padding-top: 20px;
+    height: 70px;
+    width: 70px;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 99;
+}
+#youtube:hover .img-2 {
+    display: block;
+}
+
+
+
+
+
+
+
+
 header{
     position: absolute;
     top: 0%;
