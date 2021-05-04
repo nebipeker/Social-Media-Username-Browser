@@ -1,0 +1,41 @@
+header{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+nav{
+    color: #780fce;
+    float: right;
+    margin: 30px, 90px;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    float: left;
+    padding: 5px 10px;
+    transition: .3s;
+    font-size : 20px;
+    font-family: monospace;
+}
+nav ul li:hover{
+    height:45px;
+    padding-top:30px;
+    margin-top:-30px;
+    
+    text-decoration: none;
+    transform : skew(0deg);
+    
+}
+nav ul li:hover a{
+    background:#c8f1fc;
+    text-decoration: none;
+}
+.vertical_lines {
+    width: 2px;
+    border-left: 2px solid gray;
+    height: 30px;
+  }
