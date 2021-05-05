@@ -1,10 +1,13 @@
+var usernamesArr = [];
+var emailsOfUsers = [];
 function saveInfo() {
     var username = document.getElementById("username");
     var email = document.getElementById("email");
-
-    window.localStorage.setItem("username", username.value);
-    window.localStorage.setItem("email", email.value);
-
+    usernamesArr.push(username.value);
+    emailsOfUsers.push(email.value);
+    localStorage.setItem("usernames", JSON.stringify(usernamesArr));
+    localStorage.setItem("emails", JSON.stringify(emailsOfUsers));
+    alert("User registered successfully")
 }
 function validatePassword() {
     var password = document.getElementById("password").value;
@@ -13,7 +16,7 @@ function validatePassword() {
         alert("password doesn't match");
         return false;
     } 
-    window.localStorage.setItem("password", password.value);
-    window.localStorage.setItem("repeated_password", repeated_password.value);
+    localStorage.setItem("password", password.value);
+    localStorage.setItem("repeated_password", repeated_password.value);
     return true;
 }
