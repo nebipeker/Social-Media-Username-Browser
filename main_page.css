@@ -144,6 +144,43 @@
 #youtube:hover .img-2 {
     display: block;
 }
+#checkboxes{
+    padding-top: 40px;
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#searchbox{
+    padding-top: 40px;
+    margin: 0;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);  
+}
+#search-button {
+    padding-top: 40px;
+    margin: 0;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);  
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background: linear-gradient(-45deg,#ff9b9b,#eabffa,#3db8ff);
+    background-size: 100%, 100%;
+    animation: gradient 15s ease infinite;
+    background-size: cover;
+}
 header{
     position: absolute;
     top: 0%;
