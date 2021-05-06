@@ -38,6 +38,9 @@
     text-align: center;
 }
 
+#aligned{
+    text-align: justify;
+}
 
 nav{
     color: #780fce;
