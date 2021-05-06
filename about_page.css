@@ -20,20 +20,23 @@
 }
 
 
-.firstdivision {
+#firstdivision {
     width: 500px;
     height: 50%;
     overflow: hidden;
     margin: 50px auto;
     padding: 10px;
     border-radius: 25px;
-    background-color: rgb(198, 216, 255);
+    background-color: rgb(86, 209, 138);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
    
 }
 
+#title2{
+    text-align: center;
+}
 
 
 nav{
