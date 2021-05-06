@@ -96,7 +96,22 @@ body {
     float: right;
     width: 50%;
 }
-
+#login_page_path{
+    text-decoration:none;
+    color:#2c4db8;
+    transition: 0.3s;
+}
+#login_page_path :hover{
+    opacity: 1;
+    background-color:#9fceee;
+}
+#login_page_path :active{
+    color: black;
+}
+#login_page_path :visited{
+    text-decoration:underline;
+    color: rgb(255, 0, 0);
+}
 @keyframes slide {
     
     0% {
