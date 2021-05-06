@@ -2,12 +2,17 @@ var usernamesArr = [];
 var emailsOfUsers = [];
 function saveInfo() {
     var username = document.getElementById("username");
-    var email = document.getElementById("email");
-    usernamesArr.push(username.value);
-    emailsOfUsers.push(email.value);
-    localStorage.setItem("usernames", JSON.stringify(usernamesArr));
-    localStorage.setItem("emails", JSON.stringify(emailsOfUsers));
-    alert("User registered successfully")
+    if(usernamesArr.includes(username.value)){
+        alert("This user name already taken \n Please enter a new infos...")
+    }else if(emailsOfUsers.includes(email.value)){
+        alert("This email adress already using for one account..")
+    }else{
+        usernamesArr.push(username.value);
+        emailsOfUsers.push(email.value);
+        localStorage.setItem("usernames", JSON.stringify(usernamesArr));
+        localStorage.setItem("emails", JSON.stringify(emailsOfUsers));
+        alert("User registered successfully")
+    }
 }
 function validatePassword() {
     var password = document.getElementById("password").value;
