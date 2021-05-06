@@ -112,6 +112,8 @@ body {
     text-decoration:underline;
     color: rgb(255, 0, 0);
 }
+
+
 @keyframes slide {
     
     0% {
@@ -121,3 +123,5 @@ body {
         transform: translateX(25%);
     }
 }
+
+
