@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Comment for Everyone</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="main_page.css">
+    </head>
+    <header>
+        <nav>
+            <ul>
+                <li>Welcome, <span id="demo"></span></li>
+                <li><div class="vertical_lines"></div></li>
+                <li><a href="about_page.html" class="button-container">About</a></li>
+                <li><div class="vertical_lines"></div></li>
+                <li><a href="comments.html" class="button-container">Comment</a></li>
+                <li><div class="vertical_lines"></div></li>
+                <li><a href="main_page.html" class="button-container">Sign Out</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="main_page2.js"></script>
+    <form>
+        <body>
+            <h1 id="logo">Comment For Everyone</h1>
+            <h1 id="title-1">Welcome to</h1>
+            <h1 id="title-2"><b>Comment For</b></h1>
+            <h1 id="title-3"><b>Everyone</b></h1>
+            <p id="first">CHOOSE SOCIAL MEDIA TO COMMENT PEOPLE</p>
+            <div id="twitter">
+                <button id="twitter-b">
+                    <img src="twitter.png">Twitter
+                    <img src="twitterblur.png" class="img-2">
+                </button>
+            </div>
+            <div id="instagram">
+                <button id="instagram-b"><img src="instagram.png">Instagram
+                <img src="instagramblur.png" class="img-2"></button>
+            </div>
+            <div id="youtube">
+                <button id="youtube-b"><img src="youtube.png">Youtube
+                <img src="youtubeblur.png" class="img-2"></button>
+            </div>
+            <div id = "checkboxes">
+                <label for = "twitter-checkbox">Twitter</label><input type="checkbox" id="twitter-checkbox"/>
+                <label for = "instagram-checkbox">Instagram</label><input type="checkbox" id="instagram-checkbox"/>
+                <label for = "youtube-checkbox">Youtube</label><input type="checkbox" id="youtube-checkbox"/>
+            </div>
+            <div id = "searchbox">
+                <input type="search" id = "searchbox" placeholder="Enter a username..." required/>
+            </div>
+                <input type="button" id="search-button" value="Search"/>
+        </body>
+    </form>
+</html>
