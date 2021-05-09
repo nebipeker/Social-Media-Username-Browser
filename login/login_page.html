@@ -8,7 +8,6 @@
     <title>Login</title>
     <script type="text/javascript" src="login_page.js"></script>
 </head>
-<body>
   <nav>
     <ul>
         <li>Welcome, <span id="demo"></span></li>
@@ -20,16 +19,23 @@
         <li><a href="../mainpage/main_page.html" class="button-container">Sign Out</a></li>
     </ul>
 </nav>
-
+    
+ <p id="to_main_page"><b><a href="main_page.html">Comment For Everyone</a></b></p>
+    
+     <div class="firstdivision">
+        <div id="seconddivision"> </div>
+        <h1>Login</h1>
+   
+    <body>
+        
     <label for="username">Username</label>
       <input type="text" placeholder="Username" name="username" id="username" maxlength="10" required>
-<br>
-      
-      
       <label for="password">Password</label>
       <input type="password" placeholder="Password" name="password" id="password" minlength="6" maxlength="20"
-        required><br>
+        required>
+        
+     </body>
         <button type="submit" class="login" onclick="return checkTheUser()">Login</button>
 
-</body>
+ </div> 
 </html>
