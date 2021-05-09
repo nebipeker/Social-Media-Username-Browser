@@ -46,6 +46,13 @@ function generate_table() {
     tbl.appendChild(tblBody);
     // appends <table> into <body>
     body.appendChild(tbl);
+    tbl.href="results_page.css";
     // sets the border attribute of tbl to 2;
-    tbl.setAttribute("border", "2");
+    tbl.setAttribute("border", "5");
+    tbl.setAttribute("width","800px");
+    tbl.setAttribute("height","50%");
+    tbl.setAttribute("bgcolor","mediumturquoise");
+    tbl.setAttribute("margin-left","auto");
+    tbl.setAttribute("margin-right","auto");
+    tbl.setAttribute("align","center");
   }
