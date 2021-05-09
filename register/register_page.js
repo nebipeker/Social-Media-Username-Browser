@@ -16,7 +16,7 @@ function saveInfo() {
         usernamesArr.push(username.value);
         emailsOfUsers.push(email.value);
         localStorage.setItem("usernames", JSON.stringify(usernamesArr));
-        localStorage.setItem("emails", JSON.stringify(emailsOfUsers));
+        localStorage.setItem("emails",JSON.stringify(emailsOfUsers));
         alert("User registered successfully")
         validatePassword();
     }
