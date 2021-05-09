@@ -45,9 +45,13 @@
                 <label for = "youtube-checkbox">Youtube</label><input type="checkbox" id="youtube-checkbox"/>
             </div>
             <div id = "searchbox">
-                <input type="search" id = "searchbox" placeholder="Enter a username..." required/>
+                <label for="Search username">Username</label>
+                <input type="searchUsername" id = "searchUsername" name="searchUsername" placeholder="Enter username" required>
+              
             </div>
-                <input type="button" id="search-button" value="Search"/>
+            <a href="../result/results_page.html"><input type="button" id="search-button" onclick="myfoo()" value="Search"/></a>
+              
         </body>
     </form>
+    <script src="../mainpage/main_page.js"></script>
 </html>

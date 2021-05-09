@@ -1,12 +1,13 @@
 
-var theuser = document.getElementById("username").innerHTML = "nebipeker";
+var theuser = localStorage.getItem("searchUsername")
+document.getElementById("username").innerHTML = theuser;
 
 var tmp1 = JSON.parse(localStorage.getItem('comments'))
 var i;
 var text = "";
 var tmp2 = [];
 for (i = 0; i < tmp1.length; i++) {
-    if(tmp1[i].account == "nebipeker"){
+    if(tmp1[i].account == theuser){
         tmp2.push(tmp1[i]);
     }
 }
