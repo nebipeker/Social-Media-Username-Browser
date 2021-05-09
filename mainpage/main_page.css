@@ -177,6 +177,9 @@ html,body{
 }
 body{
     background: linear-gradient(-45deg,#ff9b9b,#eabffa,#3db8ff);
+    top:0;
+    bottom:0;
+    position:fixed;
     background-size: 100%, 100%;
     animation: gradient 15s ease infinite;
     background-size: cover;
