@@ -136,4 +136,8 @@ nav ul li a{
     }
 }
 
-
+.vertical_lines {
+    width: 2px;
+    border-left: 2px solid gray;
+    height: 30px;
+  }
