@@ -5,15 +5,22 @@ var commenter = localStorage.getItem("currentUser")
 document.getElementById("NavbarCommenterName").innerHTML=""+commenter
 function submitComment(){
     
-    var commenter = Json.parse(localStorage.getItem("currentUser"))[0];
+    var commenter = (localStorage.getItem("currentUser"));
     var username = document.getElementById("username").value
     var platform = document.getElementById("platform").value
     var message = document.getElementById("cmessage").value
-    var object = {
+    var infos = {
         "account": username,
         "network": platform,
         "message": message,
         "commenter": commenter
     }
-    localStorage.setItem("comments",Json.stringify(object))
+    
+    var comments= localStorage.getItem("comments")
+    localStorage.setItem("comments","")
+    if(comments != null && comments!=""){
+    localStorage.setItem("comments",comments+JSON.stringify(infos))
+    }else{
+        localStorage.setItem("comments",JSON.stringify(infos))
+    }
 }
