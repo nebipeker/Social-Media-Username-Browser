@@ -2,7 +2,6 @@
 var theuser = localStorage.getItem("searchUsername")
 document.getElementById("username").innerHTML = theuser;
 var Network = localStorage.getItem("searchSocialMedia")
-document.getElementById("socialMedia").innerHTML= Network
 
 var tmp1 = JSON.parse(localStorage.getItem('comments'))
 var i;
@@ -18,7 +17,7 @@ for (i = 0; i < tmp1.length; i++) {
 }
 else{
   for (i = 0; i < tmp1.length; i++) {
-    if(tmp1[i].account == theuser && temp1[i].network===Network){
+    if(tmp1[i].account == theuser && tmp1[i].network===Network){
         tmp2.push(tmp1[i]);
     }
 }
@@ -32,7 +31,7 @@ function generate_table() {
     var tbl = document.createElement("table");
     var tblBody = document.createElement("tbody");
   
-    var column_names = ["commenter","message"]; //format is important
+    var column_names = ["commenter","message","network"]; //format is important
     
 
     for (var i = 0; i < tmp2.length+1; i++) {
