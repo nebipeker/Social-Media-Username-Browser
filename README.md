@@ -28,6 +28,6 @@ Now that we have explained the main goal of this project, let's take a look at t
 ![Alt text](./assets/main.jpeg)
 ![Alt text](./assets/register.jpeg)
 ![Alt text](./assets/login.jpeg)
-![Alt text](./assets/main2.jpeg)
+
 ![Alt text](./assets/comment.jpeg)
 ![Alt text](./assets/list.jpeg)
