@@ -5,7 +5,9 @@ function checkTheUser(){
     var password =JSON.parse(localStorage.getItem("passwords"));
     for(i = 0; i< usernames.length;i++){
     if(usernames[i]===userNickName && password[i]===passwordOfUser){
+        localStorage.setItem("currentUser", userNickName);
         window.open("../mainpage/main_page2.html");
+        
     }
 }
 }
