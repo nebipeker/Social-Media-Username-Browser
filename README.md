@@ -23,6 +23,7 @@ Each member's responsibilities are distributed equally. Yigit Demirsan especiall
 
 Now that we have explained the main goal of this project, let's take a look at the screenshots directly taken from the website. These screenshots serve as a user guide...
 
+...
 <br>
 ![Alt text](./assets/main.jpeg)
 ![Alt text](./assets/register.jpeg)
