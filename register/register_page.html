@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="register_page.css">
+  <script src="register_page.js"></script>
+</head>
+<div class="firstdivision">
+<header>
+  <nav id="regiter_nav">
+    <ul>
+      <li><a href="main_page.html">Main</a></li>
+      <li><a href="register_page.html">Register</a></li>
+      <li><a href="login_page.html">Login</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  <p id="to_main_page"><b><a href="main_page.html">Comment For Everyone</a></b></p>
+</header>
+  <div id="seconddivision">
+
+  </div>
+  <h1>Comments For Everyone</h1>
+    <body>
+      <label for="username">Username</label>
+      <input type="text" placeholder="Username" name="username" id="username" maxlength="10" required>
+
+      <label for="email">E-mail</label>
+      <input type="email" placeholder="E-mail" name="email" id="email" required>
+      
+      <label for="password">Password</label>
+      <input type="password" placeholder="Password" name="password" id="password" minlength="6" maxlength="20"
+        required>
+
+      <label for="password_repeat">Repeat Password</label>
+      <input type="password" placeholder="Repeat Password" name="password_repeat" id="repeated_password" minlength="6"
+        maxlength="20" required>
+      
+    </body>
+      <input type="checkbox" id="check" required>
+      <label for="check">I agree terms and privacy policy</label>
+    </br>
+      <input type="checkbox" id="check" required>
+      <label for="check">I agree cookies</label>
+    </br>
+    <a href="login_page.html" id="login_page_path"><label>Do you have an account ?</label></a>
+    <button type="submit" class="register" onclick="saveInfo();validatePassword();">Register</button>
+
+</div>
+
+
+</html>
