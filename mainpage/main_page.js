@@ -1,7 +1,7 @@
 var comments = [{"account":"nebipeker","network":"instagram","message":"Great codes","commenter":"@egemeniscan"},{"account":"egemen","network":"instagram","message":"Great codes","commenter":"@egemeniscan"},{"account":"nebipeker","network":"twitter","message":"Good content","commenter":"@elonmusk"}];
-if(comments != null && comment!="")
+if(comments != null && comment!=""){
 localStorage.setItem("comments", JSON.stringify(comments));
-
+}
 function myfoo(){
     localStorage.setItem("searchUsername",document.getElementById("searchUsername").value);
 }
