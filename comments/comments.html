@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comments</title>
     <script type="text/javascript" src="comments.js"></script>
+    <link rel="stylesheet" href="comments.css">
 </head>
-<body>
-    
+ <div id="body">
+        <div id="slide"></div>
+        <div id="forms">
+            
     <form>
+           
+      <body>
         <label for="username">Username</label>
         <input type="text" id="username"  placeholder="Username">
-    <br>
-        
         <label for="platform">Platform</label>
         <select id="platform" >
           <option value="twitter">Twitter</option>
@@ -24,7 +27,9 @@
         <label for="cmessage">Message</label>
         <textarea id="cmessage"  placeholder="Write your comment" style="height:150px"></textarea> <br>
         <button type="submit" onclick="return submitComment()">Submit</button>
-    </form>
-    
+       </form>     
+  </div> 
 </body>
+        
+</div>
 </html>
