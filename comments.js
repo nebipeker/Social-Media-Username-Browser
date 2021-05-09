@@ -5,7 +5,7 @@
 // eski yorumlari silen
 //document.writeln('<button onclick="addToLocal()">Add To localstorage</button>')
 //document.write('<button onclick="print()">print localstorage</button>')
-var comments = [{"account":"nebipeker","network":"instagram","message":"Great codes","commenter":"@egemeniscan"}];
+var comments = [{"account":"nebipeker","network":"instagram","message":"Great codes","commenter":"@egemeniscan"},{"account":"egemen","network":"instagram","message":"Great codes","commenter":"@egemeniscan"},{"account":"nebipeker","network":"twitter","message":"Good content","commenter":"@elonmusk"}];
 localStorage.setItem("comments", JSON.stringify(comments));
 var storage_comments = JSON.parse(localStorage.getItem("comments"));
 
