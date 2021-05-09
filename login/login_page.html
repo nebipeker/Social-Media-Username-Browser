@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <link rel="stylesheet" href="login_page.css">
+   
 </head>
-<body>
-  <nav>
+
+ <nav>
     <ul>
         <li>Welcome, <span id="demo"></span></li>
         <li><div class="vertical_lines"></div></li>
@@ -18,17 +19,22 @@
         <li><a href="../mainpage/main_page.html" class="button-container">Sign Out</a></li>
     </ul>
 </nav>
-
+    <p id="to_main_page"><b><a href="main_page.html">Comment For Everyone</a></b></p>
+     <div class="firstdivision">
+        <div id="seconddivision">
+      
+        </div>
+         
+    <body>
     <label for="username">Username</label>
       <input type="text" placeholder="Username" name="username" id="username" maxlength="10" required>
-<br>
       <label for="email">E-mail</label>
       <input type="email" placeholder="E-mail" name="email" id="email" required>
-      <br>
       <label for="password">Password</label>
       <input type="password" placeholder="Password" name="password" id="password" minlength="6" maxlength="20"
-        required><br>
+        required>
+        </body>
         <button type="submit" class="login" onclick="return validatePassword()">Login</button>
 
-</body>
+ </div> 
 </html>
