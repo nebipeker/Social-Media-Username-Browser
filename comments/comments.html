@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="comments.css">
     <title>Comments</title>
-    <script type="text/javascript" src="comments.js"></script>
+    
     <link rel="stylesheet" href="comments.css">
 </head>
 <header>
     <nav>
         <ul>
-            <li>Welcome, <span id="demo"></span></li>
+            <li>Welcome, <span id="NavbarCommenterName"></span></li>
             <li><div class="vertical_lines"></div></li>
-            <li><a href="../about/about_page.html" class="button-container">About</a></li>
+            <li><a href="../mainpage/main_page2.html" class="button-container">Home</a></li>
             <li><div class="vertical_lines"></div></li>
-            <li><a href="../comments/comments.html" class="button-container">Comment</a></li>
+            
             <li><div class="vertical_lines"></div></li>
             <li><a href="../mainpage/main_page.html" class="button-container">Sign Out</a></li>
         </ul>
@@ -25,7 +25,7 @@
 <div id="body">
         <div id="slide"></div>
         <div id="forms">            
-    <form>
+    
       <body>
         <label for="username">Username</label>
         <input type="text" id="username"  placeholder="Username">
@@ -38,10 +38,11 @@
     <br>
         <label for="cmessage">Message</label>
         <textarea id="cmessage"  placeholder="Write your comment" style="height:150px"></textarea> <br>
-        <button type="submit" onclick="return submitComment()">Submit</button>
-    </form>     
+        <button  onclick="return submitComment()">Submit</button>
+         
   </div> 
 </body>
         
 </div>
+<script type="text/javascript" src="comments.js"></script>
 </html>

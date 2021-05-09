@@ -6,18 +6,18 @@ function myfoo(){
 }
 
 function reset(){
-    localStorage.setItem("searchUsername","default");
+    localStorage.setItem("searchSocialMedia","default");
 }
-
+reset()
 function instagram(){
-    localStorage.setItem("searchUsername","instagram");
+    localStorage.setItem("searchSocialMedia","instagram");
 }
 
 function twitter(){
-    localStorage.setItem("searchUsername","twitter");
+    localStorage.setItem("searchSocialMedia","twitter");
 }
 
 function youtube(){
-    localStorage.setItem("searchUsername","youtube");
+    localStorage.setItem("searchSocialMedia","youtube");
 }
 

@@ -1,5 +1,10 @@
 
+
+var commenter = localStorage.getItem("currentUser")
+
+document.getElementById("NavbarCommenterName").innerHTML=""+commenter
 function submitComment(){
+    
     var commenter = Json.parse(localStorage.getItem("currentUser"))[0];
     var username = document.getElementById("username").value
     var platform = document.getElementById("platform").value
