@@ -25,7 +25,7 @@ function saveInfo() {
         localStorage.setItem("emails", JSON.stringify(emailsOfUsers));
         
         validatePassword();
-        //window.location.href = "../login/login_page.html"
+        window.location.href = "../login/login_page.html"
     }
 }
 function validatePassword() {
