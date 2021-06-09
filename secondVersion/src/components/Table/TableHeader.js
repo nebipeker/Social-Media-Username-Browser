@@ -9,7 +9,7 @@ class TableHeader extends React.Component {
                     <th>Network</th>
                     <th>commenter</th>
                     <th>user</th>
-                    <th>massage</th>
+                    <th>message</th>
                 </tr>
             </thead>);
     }
