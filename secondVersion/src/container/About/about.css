@@ -1,0 +1,12 @@
+.Appx {
+    border: 1px solid gray;
+    padding: 8px;
+  }
+  
+  p {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: #5647df;
+    text-indent: 50px;
+    letter-spacing: 3px;
+  }

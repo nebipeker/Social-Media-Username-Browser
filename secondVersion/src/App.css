@@ -1,0 +1,30 @@
+ul {
+  list-style-type: none;
+  padding: 15px;
+  margin: 0;
+}
+
+li {
+  font-family:Arial, Helvetica, sans-serif ;
+  display: inline-block;
+  padding: 10px;
+  
+ 
+}
+
+a{
+    color:rgb(26, 9, 58);
+    text-decoration: none;
+    
+}
+
+.menu {
+  background-color: #b9c0ff;
+  box-shadow: 5px 5px 5px #c6d0fc;
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
