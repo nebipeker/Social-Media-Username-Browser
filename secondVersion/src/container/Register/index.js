@@ -1,6 +1,6 @@
 
 import React,{useState} from 'react';
-import "./Register.css";
+import "./register.css";
 function Register() {
     const [nick_nameValue,setInputValue] = useState("");
     const [password,setPassword] = useState("");
