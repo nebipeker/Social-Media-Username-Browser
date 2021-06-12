@@ -7,7 +7,9 @@ import {
   Label
 } from 'reactstrap';
 import "./login.css";
+import { useHistory } from 'react-router-dom';
 function Login(){
+    const history = useHistory();
     const [nick_nameValue,setInputValue] = useState("");
     const [password_value,setPassword] = useState("");
     const shouldDisplay = nick_nameValue.length>0;
@@ -18,7 +20,7 @@ function Login(){
         <h2>Sign-In</h2>
         <Form className="form">
           <FormGroup>
-            <Label for="Email" id="Username">Username</Label>
+            <Label for="username" id="Username">Username</Label>
             <br/>
             <Input
                 type="text"
@@ -66,8 +68,10 @@ function Login(){
                         usernamecount =response.length
                         if (usernamecount > 0 ){
                             if(response[0].password === password){
+                              history.push('/addcomment')
                                 console.log("success")
                             }else{
+                              alert("Wrong password")
                               console.log("fail")
                             }
                         }else{

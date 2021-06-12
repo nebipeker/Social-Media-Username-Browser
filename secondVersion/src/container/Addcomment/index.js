@@ -2,17 +2,15 @@ import React, { Component } from 'react';
 import Heading from '../../components/Heading'
 import Table from '../../components/Table'
 import '../../App.css';
-import * as data from '../../data.json';
+
 import Form from '../../components/Form'
 
 class Addcomment extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      commentList: data.commentList
-    }
-
-    this.onAdd = this.onAdd.bind(this);
+    
+    
+    
   }
 
   onAdd(comment) {
@@ -26,8 +24,30 @@ class Addcomment extends Component {
     return (
       <div className="App">
         <Heading title="Comments For Everyone" />
-        <Form onSubmit={this.onAdd} />
-        <Table data={this.state.commentList} />
+        <Form onSubmit={
+          function pushcomment(){
+            var network = document.getElementById("network").value
+            var commenter = document.getElementById("commenter").value
+            var user = document.getElementById("user").value
+            var message = document.getElementById("message").value
+            var data = {network:network, commenter:commenter, user:user, message:message}
+            console.log(data)
+            fetch('http://localhost:3000/comments', {
+            method: 'POST',
+            headers: {
+            'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+            }).then(response => response.json())
+            .then(data => {
+                alert("Comment added")
+            })
+            .catch((error) => {
+              console.error('Error:', error);
+                });   
+          }
+          }/>
+        
       </div>
     );
   }

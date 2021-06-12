@@ -29,11 +29,18 @@
       "id": 5
     },
     {
-      "account\n": "yigitasdfasdfasdfsdf",
-      "network": "instagram",
-      "message": "helloasdasdasdasd",
-      "commenter": "nebipekersdfasdfasdf",
+      "network": "twitter",
+      "commenter": "nebipeker",
+      "user": "egemen",
+      "message": "asdasdasdaaaaa",
       "id": 6
+    },
+    {
+      "network": "",
+      "commenter": "",
+      "user": "",
+      "message": "",
+      "id": 7
     }
   ],
   "users": [
@@ -60,6 +67,12 @@
       "email": "betul.seyhan@ozu.edu.tr",
       "password": "abcd",
       "id": 4
+    },
+    {
+      "username": "peker.celi",
+      "email": "123123",
+      "password": "123123",
+      "id": 5
     }
   ]
 }

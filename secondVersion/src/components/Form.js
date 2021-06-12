@@ -14,8 +14,8 @@ export default class Form extends React.Component {
     }
     onClick() {
 
-        const { network, commenter, user, massage } = this.state;
-        const comment = { network, commenter, user, massage };
+        const { network, commenter, user, message } = this.state;
+        const comment = { network, commenter, user, message };
         this.props.onSubmit(comment);
     }
     render() {
@@ -35,7 +35,7 @@ export default class Form extends React.Component {
                    
                     <input placeholder="user" type="text" id="user" value={this.state.user} onChange={e => this.setState({ user: e.target.value })} />
                     <br />
-                    <label>comment: </label> <textarea placeholder="comment" id="massage" value={this.state.decription} onChange={e => this.setState({ massage: e.target.value })} />
+                    <label>comment: </label> <textarea placeholder="comment" id="message" value={this.state.decription} onChange={e => this.setState({ message: e.target.value })} />
 
 
                     <button onClick={this.onClick} id="button">Comment It!</button>
