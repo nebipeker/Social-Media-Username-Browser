@@ -7,6 +7,9 @@ In this project, we try to create a website which would let its users to browse 
 
 Each member's responsibilities are distributed equally. Yigit Demirsan has converted all the HTML code to React. Nebi Peker Celik has worked on the API, and on the flow of the website. Betul Seyhan has worked on the routers, containers and the components. Egemen Iscan also mainly worked on the containers, especially on the login part. On the other hand we all have worked together to solve challenging problems, share ideas, participate in pair programming and we made our best to assist each other whenever possible.Now that we have explained the main goal of this project, let's take a look at the screenshots directly taken from the website. These screenshots serve as a user guide...
 
+How Can We Use It?
+When you open the website you show the Home page there are two button if you clik button which is called Add Comment you will routed to register if you already register you can choose the login button and if you login you can use the Addcomment.Otherwise when you click the show comments you can see all the comment added without register or login.
+
 ...
 <br>
 ![Alt text](./assets/main.jpeg)
