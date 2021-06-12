@@ -9,7 +9,7 @@
     background-color: rgb(225, 215, 250);
     border: radius 15px;
   }
-  #password_label,  #Username ,h2 {
+  #password_label,  #username ,h2 {
     font-family: monospace;
     font-size:20px;
     color: rgb(63, 24, 238);

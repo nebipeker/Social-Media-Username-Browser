@@ -12,19 +12,20 @@ function Login(){
     const [password_value,setPassword] = useState("");
     const shouldDisplay = nick_nameValue.length>0;
     const shouldDisplay_password = password_value.length>0;
+    var usernamecount=0
     return (
       <div className="Login">
         <h2>Sign-In</h2>
         <Form className="form">
           <FormGroup>
-            <Label for="exampleEmail" id="Username">Username</Label>
+            <Label for="Email" id="Username">Username</Label>
             <br/>
             <Input
                 type="text"
                 name="username"
-                id="exampleEmail"
+                id="username"
                 value={nick_nameValue}
-                placeholder="Please enter your name:"
+                placeholder="Username"
                 onChange={
                 function clear(event) {
                     setInputValue(event.target.value);
@@ -36,12 +37,12 @@ function Login(){
             }>x</Button>}
           </FormGroup>
           <FormGroup>
-            <Label for="examplePassword" id="password_label">Password</Label>
+            <Label for="Password" id="password_label">Password</Label>
             <br/>
             <Input
               type="password"
               name="password"
-              id="examplePassword"
+              id="password"
               value = {password_value}
               placeholder="********"
               onChange={
@@ -57,12 +58,25 @@ function Login(){
             }>x</Button>}
           </FormGroup>
         <Button id="submit" onClick={
-            function CheckTheUserExistence(){
-                //if user exists
-                alert("Welcome back...x");
-                //if not 
-                alert ("Try again");
-            }
+            function control(){
+              var username = document.getElementById("username").value;
+              var password = document.getElementById("password").value;
+              fetch("http://localhost:3000/users?username="+username).then(response =>{
+                    response.json().then(response=>{
+                        usernamecount =response.length
+                        if (usernamecount > 0 ){
+                            if(response[0].password === password){
+                                console.log("success")
+                            }else{
+                              console.log("fail")
+                            }
+                        }else{
+                          alert("This username is not signed up.");
+                        }
+                      }) 
+               } )
+              }
+            
         }>Submit</Button>
       </Form>
     </div>
