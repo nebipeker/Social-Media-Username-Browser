@@ -1,7 +1,7 @@
-
 import React,{useState} from 'react';
-import "./register.css";
-function Register() {
+import './register.css'
+
+function Register (props) {
     const [nick_nameValue,setInputValue] = useState("");
     const [password,setPassword] = useState("");
     const [email,setEmail] = useState("");
@@ -10,8 +10,11 @@ function Register() {
     const shouldEmail = email.length>0;
     const shouldDisplay_password = password.length>0;
     const shouldDisplay_repeated_password = repeated_password.length>0;
-    return(
+    
+	return(
         <div id="table">
+			
+		     <h1>Register</h1>
             <input type="text" id="username" placeholder="Enter Your Usarname:" value={nick_nameValue} onChange={
                 function changeInput(event){
                     return(
@@ -63,11 +66,13 @@ function Register() {
                 }
             } id="clear">X</button>}
             <br/>
+		
             <button type="submit" id="register" onClick={
                 function checkThePassword(){
                     var password_a = document.getElementById("password");
                     var repeated_password_a = document.getElementById("repeated_password");
                     if(password_a.value != repeated_password_a.value){
+                        
                         alert("Please Enter a same password");
                         setPassword("");
                         setRepeatedPassword("");

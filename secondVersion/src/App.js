@@ -4,6 +4,7 @@ import Home from './container/Home'
 import About from './container/About'
 import Login from './container/Login'
 import Register from './container/Register'
+import Addcomment from './container/Addcomment'
 import './App.css';
 
 class App extends React.Component {
@@ -27,6 +28,9 @@ class App extends React.Component {
               <li>
                 <Link to="/register">REGISTER</Link>
               </li>
+              <li>
+                <Link to="/addcomment"></Link>
+              </li>
             </ul>
           </div>
           <Switch>
@@ -35,7 +39,7 @@ class App extends React.Component {
             <Route exact path="/about" component={About} />
             <Route exact path="/register" component={Register}/>
             <Route exact path="/login" component={Login} />
-            
+            <Route exact path="/addcomment" component={Addcomment} />
           </Switch>
         </BrowserRouter>
       </div>

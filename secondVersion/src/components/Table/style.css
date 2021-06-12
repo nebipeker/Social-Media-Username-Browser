@@ -29,6 +29,8 @@ td {
     height: 50%;
     padding: 10px;
     
+
+  
 }
 
 
@@ -42,24 +44,35 @@ tbody tr:nth-child(odd) {
 .comment {
   margin: auto;
   padding: 50px;
-  border-radius: 15px;
+  border-radius: 20px;
   width: 500px;
   height: 50%;
   overflow: hidden;
   margin: 50px auto;
   border: 3px solid rgb(49, 15, 151);
-  background-color: rgb(130, 153, 255);
+  color: rgb(50, 78, 231);
+  border-radius: 15px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  font-family: 'Open Sans', sans-serif;
+  background-color: rgb(198, 216, 255);
 }
 
+
+
+body{
+      font-family: 'Trebuchet MS', sans-serif;
+      font-size: 15px;
+      border-radius: 50px;
+      background-color:rgb(50, 78, 231);
+      
+}
 #button{
+  
     background-color: #2c4db8;
     font-weight: bold;
     color: rgb(255, 255, 255);
-    padding: 10px 40px;
+    padding: 0px 20px;
     border-radius: 8px;
     cursor: pointer;
     float: right;
@@ -67,17 +80,14 @@ tbody tr:nth-child(odd) {
 
 }
 #user,#commenter,#network{
- 
+  font-family: 'Open Sans', sans-serif;
   width: 30%;
   padding: 10px; 
   border-radius: 12px;
   margin: 10px 0 22px 0;
-  
+  font-weight: bold;
 }
-#commenter{
-  float: right;
 
-}
 #massage{
   font-family: 'Open Sans', sans-serif;
   width: 100%;
@@ -89,3 +99,4 @@ tbody tr:nth-child(odd) {
   background-color: rgb(255, 255, 255);
   font-weight: bold;
 }
+

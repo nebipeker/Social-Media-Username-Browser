@@ -8,7 +8,6 @@ export default class Table extends React.Component {
         const { data} = this.props;
         return (
             <table>
-              
                 <TableHeader />
                 <TableBody list={data} />
             </table>

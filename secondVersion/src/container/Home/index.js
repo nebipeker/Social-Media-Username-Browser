@@ -1,37 +1,36 @@
-import React, { Component } from 'react';
-import Heading from '../../components/Heading'
-import Table from '../../components/Table'
-import '../../App.css';
-import * as data from '../../data.json';
-import Form from '../../components/Form'
+import React from "react";
+import { Button, Label, Jumbotron } from "reactstrap";
+import "./homes.css";
+import { useHistory } from 'react-router-dom';
 
-class Home extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      commentList: data.commentList
-    }
-
-    this.onAdd = this.onAdd.bind(this);
-  }
-
-  onAdd(comment) {
-    let { commentList } = this.state;
-    commentList.push(comment);
-    this.setState({ commentList });
-  }
-
-
-  render() {
+function Home() {
+	const history = useHistory();
     return (
-      <div className="App">
-        <Heading title="Comments For Everyone" />
-        <Form onSubmit={this.onAdd} />
-        <Table data={this.state.commentList} />
+        <div id="main_page">
+            <Label id="text">
+                Welcome to
+            </Label>
+            <br />
+            <Label id="text">
+                Comment for
+            </Label>
+            <br />
+            <Label id="text">
+                Everyone
+            </Label>
+            <br />
+            <Button id="show_comments" onClick={() => history.push('/addcomment') }></Button>
+            <Button id="add_comment" onClick={() => history.push('/addcomment') }></Button>
+            <Jumbotron>
+                <h1>Start From Here !</h1>
+                <p>
+                    If you want to add comment please login.Otherwise just press the 
+                    show comments to see. For getting more information about website please 
+                    click about.
+                </p>
+            </Jumbotron>
+        </div >
 
-      </div>
     );
-  }
 }
-
 export default Home;
