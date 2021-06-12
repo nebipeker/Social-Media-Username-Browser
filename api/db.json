@@ -11,7 +11,7 @@
       "id": 2,
       "account": "egemen",
       "network": "instagram",
-      "message": "Great codes",
+      "message": ":)",
       "commenter": "@egemeniscan"
     },
     {
@@ -29,23 +29,42 @@
       "id": 5
     },
     {
-      "account\n": "yigitasdfasdfasdfsdf",
+      "account\n": "yigit_demirsan_2",
       "network": "instagram",
-      "message": "helloasdasdasdasd",
-      "commenter": "nebipekersdfasdfasdf",
+      "message": "hello world",
+      "commenter": "nebipeker_2",
       "id": 6
+    },
+    {
+      "account\n": "betulseyhan",
+      "network": "twitter",
+      "message": "interesting tweets",
+      "commenter": "egemeniscan",
+      "id": 7
+    },
+    {
+      "account\n": "yigitdemirsan",
+      "network": "instagram",
+      "message": "10/10",
+      "commenter": "egemeniscan",
+      "id": 8
     }
   ],
   "users":[
     {
       "username":"nebipeker",
-      "email":"aaaaa@gmail.com",
+      "email":"np@gmail.com",
       "password":"123123123"
     },
     {
       "username":"nebipeker",
-      "email":"ab@gmail.com",
+      "email":"peker@gmail.com",
       "password":"1233"
+    },
+    {
+      "username":"eiscan",
+      "email":"eiscan@gmail.com",
+      "password":"123456"
     }
   ]
 }
