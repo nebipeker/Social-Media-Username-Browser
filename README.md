@@ -9,9 +9,9 @@ Each member's responsibilities are distributed equally. Yigit Demirsan has conve
 
 ...
 <br>
-![Alt text](./assets/main.jpeg)
-![Alt text](./assets/register.jpeg)
-![Alt text](./assets/login.jpeg)
+![Alt text](./assets/one.jpeg)
+![Alt text](./assets/two.jpeg)
+![Alt text](./assets/three.jpeg)
 
-![Alt text](./assets/comment.jpeg)
-![Alt text](./assets/list.jpeg)
+![Alt text](./assets/four.jpeg)
+![Alt text](./assets/five.jpeg)
