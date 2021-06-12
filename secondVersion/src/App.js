@@ -7,6 +7,7 @@ import Register from './container/Register'
 import Addcomment from './container/Addcomment'
 import './App.css';
 
+
 class App extends React.Component {
 
   render() {
@@ -40,6 +41,7 @@ class App extends React.Component {
             <Route exact path="/register" component={Register}/>
             <Route exact path="/login" component={Login} />
             <Route exact path="/addcomment" component={Addcomment} />
+            
           </Switch>
         </BrowserRouter>
       </div>

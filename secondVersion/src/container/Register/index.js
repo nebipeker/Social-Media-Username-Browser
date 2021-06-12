@@ -1,7 +1,8 @@
 import React,{useState} from 'react';
 import './register.css'
-
+import { useHistory } from 'react-router-dom';
 function Register (props) {
+    const history = useHistory();
     const [nick_nameValue,setInputValue] = useState("");
     const [password,setPassword] = useState("");
     const [email,setEmail] = useState("");
@@ -70,13 +71,7 @@ function Register (props) {
             <br/>
 		
             <button type="submit" id="register" onClick={
-                /*
-                function checkThePassword(){
-                    
-                        alert("User registered successfully!")
-                        //checkTheUser info
-                    }
-                }*/
+                
                 function control (){
                     var username = document.getElementById("username").value;
                     var email = document.getElementById("email").value;
@@ -113,7 +108,7 @@ function Register (props) {
                                     body: JSON.stringify(data),
                                     }).then(response => response.json())
                                     .then(data => {
-                                      alert("User registered succesfully!")
+                                        history.push('/login')
                                     })
                                     .catch((error) => {
                                       console.error('Error:', error);

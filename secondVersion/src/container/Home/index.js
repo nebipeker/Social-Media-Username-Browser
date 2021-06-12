@@ -19,7 +19,7 @@ function Home() {
                 Everyone
             </Label>
             <br />
-            <Button id="show_comments" onClick={() => history.push('/addcomment') }></Button>
+            <Button id="show_comments" onClick={() => history.push('/showcomment') }></Button>
             <Button id="add_comment" onClick={() => history.push('/addcomment') }></Button>
             <Jumbotron>
                 <h1>Start From Here !</h1>
