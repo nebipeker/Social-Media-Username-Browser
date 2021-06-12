@@ -12,9 +12,9 @@ When you open the website you show the Home page. There are two buttons. If you 
 
 ...
 <br>
-![Alt text](./assets/one.jpeg)
-![Alt text](./assets/two.jpeg)
-![Alt text](./assets/three.jpeg)
+![Alt text](./assets/one.jpg)
+![Alt text](./assets/two.jpg)
+![Alt text](./assets/three.jpg)
 
-![Alt text](./assets/four.jpeg)
-![Alt text](./assets/five.jpeg)
+![Alt text](./assets/four.jpg)
+![Alt text](./assets/five.jpg)
