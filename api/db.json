@@ -36,16 +36,30 @@
       "id": 6
     }
   ],
-  "users":[
+  "users": [
     {
-      "username":"nebipeker",
-      "email":"aaaaa@gmail.com",
-      "password":"123123123"
+      "username": "nebipeker",
+      "email": "pekernebicelik@gmail.com",
+      "password": "123",
+      "id": 1
     },
     {
-      "username":"nebipeker",
-      "email":"ab@gmail.com",
-      "password":"1233"
+      "username": "iscanegemen",
+      "email": "egemen.iscan@ozu.edu.tr",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "username": "yigitdemirsan",
+      "email": "yigit.demirsan@ozu.edu.tr",
+      "password": "112233",
+      "id": 3
+    },
+    {
+      "username": "betulseyhan",
+      "email": "betul.seyhan@ozu.edu.tr",
+      "password": "abcd",
+      "id": 4
     }
   ]
 }

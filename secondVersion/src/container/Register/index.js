@@ -11,11 +11,13 @@ function Register (props) {
     const shouldDisplay_password = password.length>0;
     const shouldDisplay_repeated_password = repeated_password.length>0;
     
+    var usernamecount=0;
+    var emailcount=0;
 	return(
         <div id="table">
 			
 		     <h1>Register</h1>
-            <input type="text" id="username" placeholder="Enter Your Usarname:" value={nick_nameValue} onChange={
+            <input type="text" id="username" placeholder="Enter Your Username:" value={nick_nameValue} onChange={
                 function changeInput(event){
                     return(
                         setInputValue(event.target.value)
@@ -68,7 +70,16 @@ function Register (props) {
             <br/>
 		
             <button type="submit" id="register" onClick={
+                /*
                 function checkThePassword(){
+                    
+                        alert("User registered successfully!")
+                        //checkTheUser info
+                    }
+                }*/
+                function control (){
+                    var username = document.getElementById("username").value;
+                    var email = document.getElementById("email").value;
                     var password_a = document.getElementById("password");
                     var repeated_password_a = document.getElementById("repeated_password");
                     if(password_a.value != repeated_password_a.value){
@@ -77,10 +88,48 @@ function Register (props) {
                         setPassword("");
                         setRepeatedPassword("");
                     }else{
-                        alert("User registered successfully!")
-                        //checkTheUser info
-                    }
+                fetch("http://localhost:3000/users?username="+username).then(response =>{
+                    response.json().then(response=>{
+                        usernamecount =response.length
+                        if (usernamecount > 0 ){
+                            alert("This username is already signed up.");
+                        }
+                        else{
+                        fetch("http://localhost:3000/users?email="+email).then(response =>{
+                            response.json().then(response=>{
+                                emailcount =response.length
+                                console.log(emailcount)
+                                if (emailcount > 0 ){
+                                    alert("This email is already signed up.");
+                                }
+                                else{
+                                    
+                                    var data = {username:username,email:email,password:password}
+                                    fetch('http://localhost:3000/users', {
+                                    method: 'POST',
+                                    headers: {
+                                    'Content-Type': 'application/json',
+                                    },
+                                    body: JSON.stringify(data),
+                                    }).then(response => response.json())
+                                    .then(data => {
+                                      alert("User registered succesfully!")
+                                    })
+                                    .catch((error) => {
+                                      console.error('Error:', error);
+                                        });                    
+                                    }
+                            })
+                        })
+                        
+                        }
+                    })
+                })
+                
+
                 }
+            }
+        
             }>Register</button>
         </div>
     );
