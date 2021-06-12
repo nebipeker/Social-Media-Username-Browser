@@ -82,7 +82,7 @@ function Register (props) {
                     var email = document.getElementById("email").value;
                     var password_a = document.getElementById("password");
                     var repeated_password_a = document.getElementById("repeated_password");
-                    if(password_a.value != repeated_password_a.value){
+                    if(password_a.value !== repeated_password_a.value){
                         
                         alert("Please Enter a same password");
                         setPassword("");
