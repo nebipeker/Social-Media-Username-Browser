@@ -1,7 +1,5 @@
-# CS391-20_21-Spring
+# Social Media Username Browser
 This repository is the codebase for CS391 Web Development Class at Ozyegin University 2020 2021 Spring term
-
-Social Media Username Browser
 
 This project is a website where users can browse through usernames of well-known social media networks such as Facebook, Instagram, and Twitter. Users can select a username and the social media network, and the website displays the comments made by other users about that username.
 
